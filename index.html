@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>My Website</title>
+</head>
+<body>
+<!-- Header -->
+<section id="header">
+<div class="header container">
+<div class="nav-bar">
+<div class="brand">
+<a href="#hero">
+<h1>Princess Anne</h1>
+</a>
+</div>
+<div class="nav-list">
+<div class="bar"></div>
+</div>
+<ul>
+
+<h2><a href="#projects" data-after="Projects">Projects</a></h2>
+<h2><a href="#about" data-after="About">About</a></h2>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- End Header -->
+
+<div style="height: 100px; background-color: white;"></div>
+
+
+
+
+<!-- About Section -->
+<section id="about">
+    <div style="display: flex; align-items: center;">
+        <div style="border-radius: 50%; overflow: hidden; height: 500px; width: 500px; margin-right: 50px;">
+            <img src="images/profpic.jpg" alt="Profile picture" style="height: 100%; width: 100%;">
+        </div>
+        <div>
+            <h1 style="margin: 0; font-size: 2.5em;">Hello,</h1>
+            <h1 style="margin: 0; font-size: 2.5em;">I'm Princess Anne</h1>
+            <h1 style="margin: 0; font-size: 2.5em;">Frontend Developer</h1>
+            <h2>"I am a dedicated Front-End Developer with a passion</h2> 
+            <h2> for visually appealing and highly functional websites.</h2>
+            <h2> Proficient in HTML, CSS, and JavaScript, I specialize</h2>
+            <h2> in creating responsive and interactive user interfaces.</h2>
+            <h2> With a keen eye for design and a commitment to clean</h2>
+            <h2> practices, I bring ideas to life, ensuring a seamless</h2>
+            <h2> and engaging user experience. Constantly staying updated</h2>
+            <h2> with the latest web technologies, I thrive on turning </h2>
+            <h2> into visually stunning digital solutions. Let's c</h2>
+            <h2> and build something exceptional together!"</h2>
+
+
+            <br>
+            <a href="https://www.linkedin.com/in/princess-anne-raguindin-8a2248257/" target="_blank"><img src="images/linkin.png" alt="LinkedIn icon" style="height: 50px; width: 50px;"></a>
+            <a href="https://github.com/cess099" target="_blank"><img src="images/git.png" alt="GitHub icon" style="height: 50px; width: 60px;"></a>
+        </div>
+    </div>
+</section>
+
+<!-- End About Section -->
+
+<div style="height: 500px; background-color: white;"></div>
+<div class="projects-header">
+    <h1 class="section-title"> <span>Projects</span></h1>
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="project">
+        <img src="images/stetoscope.jpg" alt="Project 1">
+        <h2>DOCTORS NOTE</h2>
+        <p>Hospitals and medical professionals utilize a doctor's note app to document a medical appointment for a sick patient. Doctors can record general patient and hospital information, make a medical diagnosis, and digitally sign the report.</p>
+
+    </div>
+
+    <div class="project">
+        <img src="images/PINCODE.jpg">
+        <h2>GYMRAT</h2>
+        <p>Introducing GYMRAT, the revolutionary fitness app designed to transform your workout experience. Our user-friendly platform takes the hassle out of creating personalized workout plans by utilizing a quick and efficient form to capture your fitness level, goals, and preferences. GYMRAT goes beyond the ordinary, providing expert-curated routines with detailed exercise instructions and proper forms tailored to your specific needs. Our Innovative administration system sets us apart, Incorporating personalized metrics that redefine the fitness journey and introduce a new level of precision. Embrace the concept of progressive overload seamlessly with GYMRAT, ensuring continuous Improvement and motivation. The app also features admin control, user statistics, and intelligent recommendations based on user behavior, making it a comprehensive solution for individuals seeking a personalized and effective fitness experience.</p>
+       
+    </div>
+
+    <!-- Add more project divs as needed -->
+
+</section>
+
+
+
+<script src="./app.js"></script>
+
+
+            <style>
+                @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+            * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            }
+            html {
+            font-size: 10px;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+            }
+            a {
+            text-decoration: none;
+            }
+            .container {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+            img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            }
+            p {
+            color: rgb(33, 12, 154);
+            font-size: 1.4rem;
+            margin-top: 5px;
+            line-height: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 0.05rem;
+            }
+            .section-title {
+            font-size: 4rem;
+            font-weight: 300;
+            color: rgb(16, 166, 189);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+
+            letter-spacing: 0.2rem;
+            text-align: center;
+            }
+            .section-title span {
+            color: rgb(46, 26, 226);
+            }
+            .cta {
+            display: inline-block;
+            padding: 10px 30px;
+            color: white;
+            background-color: transparent;
+            border: 2px solid rgb(45, 100, 238);
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            margin-top: 30px;
+            transition: 0.3s ease;
+            transition-property: background-color, color;
+            }
+            .cta:hover {
+            color: white;
+            background-color: crimson;
+            }
+            .brand h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: rgb(0, 0, 0);
+            }
+            .brand h1 span {
+            color: rgb(2, 9, 78);
+            }
+            /* Header section */
+            #header {
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: auto;
+            }
+            #header .header {
+
+            min-height: 8vh;
+            background-color: rgba(15, 62, 233, 0.24);
+            transition: 0.3s ease background-color;
+            }
+            #header .nav-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            max-width: 1300px;
+            padding: 0 10px;
+            border-color: rgb(0, 0, 0);
+            }
+            #header .nav-list ul {
+            list-style: none;
+            position: absolute;
+            background-color: rgb(87, 162, 202);
+            width: 100vw;
+            height: 100vh;
+            left: 100%;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            overflow-x: hidden;
+            transition: 0.5s ease left;
+            }
+            #header .nav-list ul.active {
+            left: 0%;
+            }
+            #header .nav-list ul a {
+            font-size: 2.5rem;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            padding: 20px;
+            display: block;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+            }
+            #header .nav-list ul a::after {
+
+            content: attr(data-after);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            color: rgba(255, 255, 255, 0.021);
+            font-size: 13rem;
+            letter-spacing: 50px;
+            z-index: -1;
+            transition: 0.3s ease letter-spacing;
+            }
+            #header .nav-list ul li:hover a::after {
+            transform: translate(-50%, -50%) scale(1);
+            letter-spacing: initial;
+            }
+            #header .nav-list ul li:hover a {
+            color: rgb(0, 0, 0);
+            border-bottom: 2px solid rgb(193, 20, 220);
+            }
+            
+            /* End Header section */
+            
+            
+            
+            /* About Section */
+            #about .about {
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 20px;
+            background-color: white;
+            border-color: white;
+            }
+            #about .col-left  .about-img::after{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            border: 10px solid white;
+            border-radius: 100%;
+            }
+
+            #about .col-left .about-img::after {
+            content: '';
+            position: absolute;
+            left: -33px;
+            top: 19px;
+            height: 98%;
+            width: 98%;
+            border: 7px solid rgb(163, 191, 255);
+            z-index: -1;
+            }
+
+            #about .col-left {
+            width: 250px;
+            height: 360px;
+            }
+            #about .col-right {
+            width: 100%;
+            }
+            #about .col-right h2 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            margin-bottom: 10px;
+            }
+            #about .col-right p {
+            margin-bottom: 20px;
+            }
+            #about .col-right .cta {
+            color: rgb(244, 238, 238);
+
+            margin-bottom: 50px;
+            padding: 10px 20px;
+            font-size: 2rem;
+            }
+            #about .col-left .about-img {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            border: 10px solid white;
+            }
+            #about .col-left .about-img::after {
+            content: '';
+            position: absolute;
+            left: -33px;
+            top: 19px;
+            height: 98%;
+            width: 98%;
+            border: 7px solid rgb(163, 191, 255);
+            z-index: -1;
+            }
+            /* End About Section */
+
+            
+
+            /* Project Section*/
+            #projects {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding: 20px;
+                left: 50px;
+            }
+
+            .project {
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+                overflow: hidden;
+                width: 1000px; /* Increase width as needed */
+            }
+
+            .project img {
+                width: 100%;
+                height: 500px; /* Increase height as needed */
+                object-fit: cover;
+            }
+
+            .project h2 {
+                color: #1096bd;
+                font-size: 5rem; /* Increase font size as needed */
+                margin: 15px 0;
+            }
+
+            .project p {
+                margin: 0 15px 15px 15px;
+                font-size: 1.25rem; /* Increase font size as needed */
+            }
+
+            .cta {
+                background-color: #1096bd;
+                color: #fff;
+                display: block;
+                padding: 50px; /* Increase padding as needed */
+                text-align: center;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+                font-size: 1.2rem; /* Increase font size as needed */
+            }
+
+            .cta:hover {
+                background-color: #087092;
+            }
+            
+           
+            /* Keyframes */
+        
+            @keyframes text_reveal_box {
+            50% {
+            width: 100%;
+            left: 0;
+            }
+            100% {
+            width: 0;
+            left: 100%;
+            }
+            }
+            @keyframes text_reveal {
+
+            100% {
+            color: white;
+            }
+            }
+            @keyframes text_reveal_name {
+            100% {
+            color: rgb(165, 142, 147);
+            font-weight: 500;
+            }
+            }
+            /* End Keyframes */
+            /* Media Query For Tablet */
+            @media only screen and (min-width: 768px) {
+            .cta {
+            font-size: 2.5rem;
+            padding: 20px 60px;
+            }
+            h1.section-title {
+            font-size: 6rem;
+            }
+            
+            
+            
+            /* About */
+            #about .about {
+            flex-direction: row;
+            }
+            #about .col-left {
+            width: 600px;
+            height: 400px;
+            padding-left: 60px;
+            }
+            #about .about .col-left .about-img::after {
+            left: -45px;
+            top: 34px;
+            height: 98%;
+            width: 98%;
+            border: 10px solid rgb(255, 255, 255);
+            }
+            #about .col-right {
+            text-align: left;
+            padding: 30px;
+            }
+            #about .col-right h1 {
+            text-align: left;
+            }
+            /* End About */
+
+            /* Project */
+            #projects .project-item {
+            flex-direction: row;
+            }
+            #projects .project-item:nth-child(even) {
+            flex-direction: row-reverse;
+            }
+            #projects .project-item {
+
+            height: 400px;
+            margin: 0;
+            width: 100%;
+            border-radius: 0;
+            }
+            #projects .all-projects .project-info {
+            height: 100%;
+            }
+            #projects .all-projects .project-img {
+            height: 100%;
+            }
+            /* End Project */
+            
+            }
+            /* End Media Query For Tablet */
+            /* Media Query For Desktop */
+            @media only screen and (min-width: 1200px) {
+            /* header */
+
+            }
+            #header .nav-list ul {
+            position: initial;
+            display: block;
+            height: auto;
+            width: fit-content;
+            background-color: transparent;
+
+            }
+
+
+            #header .nav-list ul li {
+            display: inline-block;
+            }
+            #header .nav-list ul li a {
+            font-size: 1.8rem;
+            }
+            #header .nav-list ul a:after {
+            display: none;
+            }
+            /* End header */
+            #services .service-bottom .service-item {
+            flex-basis: 22%;
+            margin: 1.5%;
+            }
+            
+            </style>
+
+        <script>
+           
+            const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+            const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+            const header = document.querySelector('.header.container');
+            
+            
+        
+        document.addEventListener('scroll', () => {
+            var scroll_position = window.scrollY;
+            if (scroll_position > 250) {
+            header.style.backgroundColor = '#29323c';
+            } else {
+            header.style.backgroundColor = 'transparent';
+            }
+        });
+        
+        menu_item.forEach((item) => {
+        item.addEventListener('click', () => {
+        mobile_menu.classList.toggle('active');
+        });
+        });
+        </script>
+
+</body>
+</html>
+
